@@ -52,7 +52,7 @@ html {
 
 .promo .loge-in {
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -64,15 +64,14 @@ html {
   width: 41px;
   height: 14px;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
 
 h1 {
-  margin-top: 171px;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -91,6 +90,7 @@ h1 {
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 138px;
   }
 
   .promo .logo {
@@ -100,17 +100,49 @@ h1 {
     transform: translate(40%, 50%);
 
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
   }
 
-  .h1 {
+  h1 {
+    margin: 0;
+    padding: 0;
     margin-top: 183px;
   }
 
   h2 {
+    margin: 0;
+    padding: 0;
     margin-top: 19px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo .hero-link{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
