@@ -78,7 +78,7 @@ h1 {
   text-align: center;
 }
 
-@media screen and (min-width: 350px) {
+@media (min-width: 350px) and (max-width:759px) {
   .promo .header-list {
     position: relative;
     padding-top: 20px;
@@ -146,7 +146,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media (min-width: 760px) and (max-width:1100px) {
   .promo {
     background-image: linear-gradient(
         to bottom right,
@@ -155,4 +155,152 @@ h1 {
       ),
       url(../img/tablet.jpg);
   }
+
+  .promo .container {
+    position: relative;
+    max-width: 669px;
+    padding-bottom: 234px;
+  }
+
+  .promo .header-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 38px;
+  }
+
+  .promo .logo {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 162px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo .hero-link{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media screen and (min-width: 1100px){
+  .promo {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/desktop.jpg);
+  }
+
+  .promo .container {
+    position: relative;
+    max-width: 939px;
+    padding-bottom: 234px;
+  }
+
+  .promo .header-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 38px;
+  }
+
+  .promo .logo {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 162px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo .hero-link{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
