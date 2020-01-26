@@ -52,10 +52,17 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 12px 18px 10px 19px;
+}
+
+.promo .loge-in:hover {
+  border: 2px solid #ffffff;
 }
 
 .promo .sign-up {
-  border: 2px solid #ffffff;
+  border: 2px solid transparent;
   border-radius: 20px;
   padding: 12px 18px 10px 19px;
   width: 41px;
@@ -66,7 +73,11 @@ html {
   font-weight: 700;
 }
 
-h1 {
+.promo .sign-up:hover {
+  border: 2px solid #ffffff;
+}
+
+.main-title {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -109,8 +120,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-  /* bottom: 0;
-  right: 0; */
   transform: scale(1);
 }
 
@@ -145,7 +154,7 @@ h1 {
     font-weight: 700;
   }
 
-  h1 {
+  .main-title {
     margin: 0;
     padding: 0;
     margin-top: 183px;
@@ -177,12 +186,17 @@ h1 {
     width: 280px;
     height: 40px;
     background-color: #ff4e50;
+    border: 1px solid #ff4e50;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 19px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .promo .hero-link:hover {
+    background-color: transparent;
   }
 
   .icon {
@@ -226,7 +240,7 @@ h1 {
     font-weight: 700;
   }
 
-  h1 {
+  .main-title {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
@@ -261,12 +275,17 @@ h1 {
     width: 280px;
     height: 40px;
     background-color: #ff4e50;
+    border: 1px solid #ff4e50;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 34px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .promo .hero-link:hover {
+    background-color: transparent;
   }
 
   .icon {
@@ -310,7 +329,7 @@ h1 {
     font-size: 20px;
     font-weight: 700;
   }
-  h1 {
+  .main-title {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
@@ -346,11 +365,16 @@ h1 {
     height: 40px;
     background-color: #ff4e50;
     border-radius: 20px;
+    border: 1px solid #ff4e50;
     align-items: center;
     justify-content: center;
     margin-top: 34px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .promo .hero-link:hover {
+    background-color: transparent;
   }
 }
 
@@ -470,6 +494,11 @@ h1 {
     margin-top: 43px;
   }
 
+  .partners .partner-link:hover {
+    background-color: #ff4e50;
+    color: #ffffff;
+  }
+
   .icon {
     position: absolute;
     right: 100px;
@@ -539,6 +568,11 @@ h1 {
     margin-right: auto;
     margin-top: 53px;
   }
+
+  .partners .partner-link:hover {
+    background-color: #ff4e50;
+    color: #ffffff;
+  }
 }
 
 /* desktop */
@@ -588,6 +622,11 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 53px;
+  }
+
+  .partners .partner-link:hover {
+    background-color: #ff4e50;
+    color: #ffffff;
   }
 
   .partner .partner-description {
