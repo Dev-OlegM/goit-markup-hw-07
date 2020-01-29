@@ -18,7 +18,7 @@ html {
 /* container */
 
 .container {
-  max-width: 400px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,17 +37,28 @@ html {
   background-position: center;
 }
 
-.header-list {
+.header-section {
+  position: absolute;
+  background-color: transparent;
+}
+
+.header {
   display: flex;
   justify-content: center;
 }
 
-.promo .header-item {
+.header-list {
+  display: flex;
+  justify-content: center;
+  margin-left: 170px;
+}
+
+.header .header-item {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.promo .loge-in {
+.header .loge-in {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -57,11 +68,11 @@ html {
   padding: 12px 18px 10px 19px;
 }
 
-.promo .loge-in:hover {
+.header .loge-in:hover {
   border: 2px solid #ffffff;
 }
 
-.promo .sign-up {
+.header .sign-up {
   border: 2px solid transparent;
   border-radius: 20px;
   padding: 12px 18px 10px 19px;
@@ -73,11 +84,13 @@ html {
   font-weight: 700;
 }
 
-.promo .sign-up:hover {
+.header .sign-up:hover {
   border: 2px solid #ffffff;
 }
 
 .main-title {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -128,8 +141,7 @@ html {
 }
 
 @media (min-width: 350px) and (max-width: 759px) {
-  .promo .header-list {
-    position: relative;
+  .header .header-list {
     padding-top: 20px;
   }
 
@@ -142,22 +154,18 @@ html {
     padding-bottom: 138px;
   }
 
-  .promo .logo {
-    position: absolute;
-    top: 171px;
-    left: 48px;
-    transform: translate(40%, 50%);
-
+  .header .logo {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
+    padding-top: 150px;
   }
 
   .main-title {
     margin: 0;
     padding: 0;
-    margin-top: 183px;
+    padding-top: 183px;
   }
 
   .promo .hero-description {
@@ -221,17 +229,16 @@ html {
     padding-bottom: 234px;
   }
 
-  .promo .header-list {
+  .header .header-list {
     display: flex;
     justify-content: flex-end;
     padding-top: 38px;
   }
 
-  .promo .logo {
+  .header .logo {
     margin: 0;
     padding: 0;
     padding-top: 40px;
-    position: absolute;
     top: 0;
     left: 0;
     color: #ffffff;
@@ -241,6 +248,8 @@ html {
   }
 
   .main-title {
+    margin: 0;
+    padding: 0;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
@@ -311,17 +320,16 @@ html {
     padding-bottom: 234px;
   }
 
-  .promo .header-list {
+  .header .header-list {
     display: flex;
     justify-content: flex-end;
     padding-top: 38px;
   }
 
-  .promo .logo {
+  .header .logo {
     margin: 0;
     padding: 0;
     padding-top: 40px;
-    position: absolute;
     top: 0;
     left: 0;
     color: #ffffff;
@@ -330,6 +338,8 @@ html {
     font-weight: 700;
   }
   .main-title {
+    margin: 0;
+    padding: 0;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
