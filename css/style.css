@@ -39,7 +39,8 @@ html {
 
 .header-section {
   position: absolute;
-  left: 25%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
 }
 
@@ -230,10 +231,6 @@ html {
     padding-bottom: 234px;
   }
 
-  .header-section {
-    left: 70px;
-  }
-
   .header {
     flex-direction: row-reverse;
     width: 660px;
@@ -340,14 +337,10 @@ html {
     max-width: 939px;
     padding-bottom: 234px;
   }
-  /* header */
-  .header-section {
-    right: 50%;
-  }
 
   .header {
     flex-direction: row-reverse;
-    width: 660px;
+    width: 940px;
     justify-content: space-between;
   }
 
@@ -356,8 +349,6 @@ html {
     justify-content: flex-end;
     padding-top: 38px;
   }
-
-  /* header */
 
   .header .header-list {
     display: flex;
@@ -631,10 +622,6 @@ html {
 /* desktop */
 
 @media screen and (min-width: 1100px) {
-  .header-section {
-    left: 650px;
-  }
-
   .partner {
     margin: 0;
     padding: 0;
