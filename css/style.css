@@ -37,7 +37,7 @@ html {
   background-position: center;
 }
 
-.header-section {
+.header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -101,32 +101,38 @@ html {
   text-align: center;
 }
 
-.partners .bradley {
-  background-image: url(../img/icons/tv.svg);
-  background-color: #ff5355;
-}
-
-.partners .lucas {
-  background-image: url(../img/icons/icon-lucas.svg);
-  background-color: #ffa507;
-}
-
-.partners .heather {
-  background-image: url(../img/icons/icon-heather.svg);
-  background-color: #1cd7ad;
-}
-
-.partners .hunter {
-  background-image: url(../img/icons/icon-hunter.svg);
-  background-color: #4e73db;
-}
-
-.partners .card-photo {
+.partners .card {
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.partners .card:hover {
   cursor: pointer;
 }
 
-.partners .icon {
+.partners .card-bradley {
+  position: relative;
+  display: inline-block;
+}
+
+.partners .card-lucas {
+  position: relative;
+  display: inline-block;
+}
+
+.partners .card-heather {
+  position: relative;
+  display: inline-block;
+}
+
+.partners .card-hunter {
+  position: relative;
+  display: inline-block;
+}
+
+.partners .card-bradley::before {
+  content: '';
   width: 30px;
   height: 30px;
   position: absolute;
@@ -136,9 +142,76 @@ html {
   background-position: center;
   background-size: 60%;
   transform: scale(1);
+  background-image: url(../img/icons/tv.svg);
+  background-color: #ff5355;
+  right: 0;
+  bottom: 0;
 }
 
-.partner-item:hover .icon {
+.partners .card-lucas::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  transform: scale(1);
+  background-image: url(../img/icons/icon-lucas.svg);
+  background-color: #ffa507;
+  right: 0;
+  bottom: 0;
+}
+
+.partners .card-heather::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  transform: scale(1);
+  background-image: url(../img/icons/icon-heather.svg);
+  background-color: #1cd7ad;
+  right: 0;
+  bottom: 0;
+}
+
+.partners .card-hunter::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  transform: scale(1);
+  background-image: url(../img/icons/icon-hunter.svg);
+  background-color: #4e73db;
+  right: 0;
+  bottom: 0;
+}
+
+.partners .card-bradley:hover::before {
+  transform: scale(1.05);
+}
+
+.partners .card-lucas:hover::before {
+  transform: scale(1.05);
+}
+
+.partners .card-heather:hover::before {
+  transform: scale(1.05);
+}
+
+.partners .card-hunter:hover::before {
   transform: scale(1.05);
 }
 
@@ -154,6 +227,12 @@ html {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 138px;
+  }
+
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .header .logo {
@@ -209,9 +288,10 @@ html {
     background-color: transparent;
   }
 
-  .icon {
-    right: 100px;
-    bottom: 0px;
+  .partner-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -251,6 +331,14 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
+    margin-right: auto;
+  }
+
+  .header .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 660px;
   }
 
   .main-title {
@@ -338,14 +426,14 @@ html {
     padding-bottom: 234px;
   }
 
-  .header {
+  .header .container {
+    display: flex;
     flex-direction: row-reverse;
     width: 940px;
     justify-content: space-between;
   }
 
   .header .header-list {
-    display: flex;
     justify-content: flex-end;
     padding-top: 38px;
   }
